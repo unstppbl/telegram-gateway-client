@@ -1,0 +1,30 @@
+name: Bug report
+description: Report unexpected package behavior using synthetic data.
+title: "bug: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For vulnerabilities, use the private reporting link in SECURITY.md.
+        Do not include access tokens, real phone numbers, or private payloads.
+  - type: input
+    id: version
+    attributes:
+      label: Package and Go versions
+      placeholder: v0.1.0, go1.27.3 linux/amd64
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Use a local HTTP server and fake credentials where possible.
+      render: go
+    validations:
+      required: true

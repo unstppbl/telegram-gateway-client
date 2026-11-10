@@ -1,0 +1,17 @@
+name: Feature request
+description: Propose a focused improvement to the Gateway client.
+title: "feature: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior or API
+      description: Include relevant official Telegram documentation when applicable.
+    validations:
+      required: true

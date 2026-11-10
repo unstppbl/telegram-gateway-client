@@ -1,0 +1,14 @@
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+
+# Go test outputs
+coverage.out
+*.test
+*.prof
+
+# Editor and operating-system files
+.DS_Store
+.idea/
+.vscode/
